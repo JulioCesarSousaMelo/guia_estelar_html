@@ -1,0 +1,148 @@
+<!-- Autor: Júlio César S. Melo -->
+
+<!--
+    Hyperlinks - Elemento Ãncora: Tag <a>
+
+    @ Anatomia:
+    
+    <a href=""></a>
+
+    @ Atributos:
+
+        @@ globais (ex: title, id, class)
+
+        @@  href
+            @@@ url completa (ex: google.com)
+            @@@ fragmento (ex: #lista01)
+            @@@ email
+            @@@ telefone
+            @@@ e outros
+
+        @@ download
+        @@ target 
+            @@@ _self (padrão)
+            @@@ _blanck (abre em outra guia)
+
+
+        Exemplo (email, telefone, url):
+
+        <p>Encontre-me:</p>
+        <ul>
+            <li><a href="https://rocketseat.com.br" target="_blanck">Website</a></li>
+            <li><a href="mailto:email@gmail.com" target="_blanck">E-Mail</a></li>
+            <li><a href="tel:+5561999999999" target="_blanck">Telefone de Contato</a></li>
+        </ul>
+
+        Exemplo (fragmentado):
+
+        <p>Saiba Mais</p>
+        <ul>
+            <li><a href="#about">Sobre mim</a></li>
+        </ul>
+
+        <h1 id="about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis suscipit vel accusamus, quod impedit, at fugit eveniet repellat asperiores error quas inventore, vitae voluptas saepe dolores. Distinctio velit accusantium quidem!</h1>
+
+-->
+
+<!--
+    URLs e Caminhos dos arquivos:
+
+    @ Uniform Resource Locator
+        @@ https://www.google.com.br
+        @@ Sequência de texto que define onde algo está localizado na Web
+    @ URL usam camihos para encontrar arquivos
+
+    @ Caminhos dos arquivos
+        @@ Onde, no explorador de arquivos, um recurso está localizado
+
+    Exemplos:
+
+    <a href="https://google.com">Chama uma URL da Web</a>
+    <a href="./images/imagem.png">Chama um arquivo do projeto</a>
+
+-->
+
+<!--
+    Como navegar pelos caminhos:
+
+    @ mesmo diretório:
+    
+    <a href="index.html">Arquivo na mesma pasta</a>
+
+    @ entrando em diretórios:
+
+    <a href="outros/hyperlinktext.html">Arquivo em outro diretório</a>
+
+    @ saindo de diretórios:
+
+    <a href="../outros/hyperlinktext.html">Arquivo em outro diretório</a>
+
+    @ diretório raiz (root ou pai):
+    <a href="./subpasta/hyperlinktext.html">Arquivo no diretório raiz</a>
+
+-->
+
+<!--
+    URLs absolutos versus relativos:
+
+    @ Absolutos:
+        @@ Inclui protocolo e nome de domínio:
+            @@@ https://google.com.br
+        @@ Sempre apontará para o mesmo local, pois é absoluto
+
+    Exemplo:
+
+    <a href="https://google.com">Absoluto: Ir para o Google</a>
+
+    @ Relativos:
+        @ Relativo à página aberta no momento
+        @ Apontará para lugares diferentes
+
+    Exemplo: 
+
+    <a href="google.com">Relativo: Ir para o Google</a>
+        
+-->
+
+
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <a href="index.html"><li>Home</li></a>
+            <a href="contact.html" target="_blank"><li>Contact</li></a>
+            <a href="./files/images.html" target="_blank"><li>Images</li></a>
+            
+        </ul>
+    </nav>
+
+    <h1>Página Principal</h1>
+    <p>Nessa página, é apresentado os <strong>Conteúdos Principais</strong>, como:</p>
+
+
+    <h2>HTML</h2>
+    <p><em>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</em></p>
+    <p>Temporibus eaque consequatur illum? Hic vitae quisquam, optio totam ratione temporibus voluptatum, doloribus reprehenderit, consectetur porro culpa adipisci quibusdam maiores aliquid cum!</p>
+
+    <h2>CSS</h2>
+    <p><em>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</em></p>
+    <p>Temporibus eaque consequatur illum? Hic vitae quisquam, optio totam ratione temporibus voluptatum, doloribus reprehenderit, consectetur porro culpa adipisci quibusdam maiores aliquid cum!</p>
+
+    <h2>Java Script</h2>
+    <p><em>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</em></p>
+    <p>Temporibus eaque consequatur illum? Hic vitae quisquam, optio totam ratione temporibus voluptatum, doloribus reprehenderit, consectetur porro culpa adipisci quibusdam maiores aliquid cum!</p>
+    
+</body>
+</html>
+
+
+
+
+
